@@ -44,7 +44,20 @@ module.exports = {
             '/*/*/media',
             '/*/*/menus', // <== Menu api endpoint
             '/*/*/menu-locations',
-          ]
+          ],
+          plugins: [
+            {
+              resolve: `@draftbox-co/gatsby-wordpress-inline-images`,
+              options: {
+                baseUrl: `localhost/melamina`,
+                protocol: `http`
+              }
+            }
+          ], 
+          // searchAndReplaceContentUrls: {
+          //   sourceUrl: 'localhost/melamina',
+          //   replacementUrl: 'http://localhost:8000'
+          // }
       }
   }
     // this (optional) plugin enables Progressive Web App + Offline functionality
