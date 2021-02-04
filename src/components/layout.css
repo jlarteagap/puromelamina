@@ -1,3 +1,11 @@
+:root{
+  --BG: #F0EAD2;
+  --Dark: #6C584C;
+  --Green: #ADC178;
+  --GreenLigth: #DDE5B6;
+  --Brown: #A98467
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -6,6 +14,8 @@ html {
   overflow-y: scroll;
 }
 body {
+  background: var(--BG);
+  font-size: 16px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,9 +61,14 @@ template {
   display: none;
 }
 a {
+  color: var(--Dark);
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
+  a:hover{
+    color: var(--Green);
+  }
 a:active,
 a:hover {
   outline-width: 0;
@@ -109,6 +124,7 @@ sup {
   top: -0.5em;
 }
 img {
+  border-radius: .25rem;
   border-style: none;
   max-width: 100%;
   margin-left: 0;
@@ -594,4 +610,17 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.main {
+  background: #FFF;
+  border-radius: .25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+.articles{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
