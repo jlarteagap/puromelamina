@@ -1,4 +1,6 @@
 module.exports = {
+  // pathPrefix: "puromelamina",
+
   siteMetadata: {
     title: `Puro Melamina`,
     description: `Trucos, tutoriales e ideas para muebles de melamina`,
