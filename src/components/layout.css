@@ -625,3 +625,24 @@ pre tt:after {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
+
+.htoc {
+  background: var(--GreenLigth);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  display: block;
+  font-size: .75rem;
+  float: right;
+  margin-bottom: 1.5rem;
+  padding: .5rem 1rem;
+  width: 50%;
+}
+.htoc li {
+  margin: 0;
+}
+.ht_toc_title{
+  font-weight: 700;
+}
+.htoc__toggle{
+  display: none;
+}

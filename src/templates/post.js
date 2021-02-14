@@ -8,8 +8,6 @@ import SEO from "../components/seo"
 class PostTemplate extends Component {
     render() {
         const post = this.props.data.wordpressPost;
-
-        // STEP #5: Use title and content in Gatsby.
         return (
             <Layout>
                 <SEO title={post.title} />

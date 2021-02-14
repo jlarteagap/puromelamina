@@ -1,5 +1,5 @@
 module.exports = {
-  // pathPrefix: "puromelamina",
+  pathPrefix: "puromelamina",
 
   siteMetadata: {
     title: `Puro Melamina`,
@@ -52,7 +52,8 @@ module.exports = {
               resolve: `@draftbox-co/gatsby-wordpress-inline-images`,
               options: {
                 baseUrl: `localhost/melamina`,
-                protocol: `http`
+                protocol: `http`,
+                // pathPrefix: `/puromelamina`,
               }
             }
           ], 
