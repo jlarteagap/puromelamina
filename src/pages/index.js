@@ -18,9 +18,9 @@ export default ({ data }) => {
               <h2>{node.title}</h2>
             </Link>
             {
-              node.featured_media===null?<h1>No featured media</h1>:<Img fluid={node.featured_media.localFile.childImageSharp.fluid}/>
+              node.featured_media===null?<h5>No featured media</h5>:<Img fluid={node.featured_media.localFile.childImageSharp.fluid}/>
             }
-            <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            {/* <div dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
           </div>
         ))}
       </div>
