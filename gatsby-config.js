@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Newsreader', 'Raleway']
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -59,10 +67,11 @@ module.exports = {
           ], 
           // searchAndReplaceContentUrls: {
           //   sourceUrl: 'localhost/melamina',
-          //   replacementUrl: 'http://localhost:8000'
+          //   replacementUrl: 'localhost:8000'
           // }
       }
-  }
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

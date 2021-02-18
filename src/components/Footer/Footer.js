@@ -2,8 +2,8 @@ import React from 'react'
 import './Footer.css'
 export const Footer = () => (
     <footer className="footer">
-          © {new Date().getFullYear()}, Built with 
+          © {new Date().getFullYear()}, Desarrollado en Gatsby por  
           {` `}
-          <a href="https://www.gatsbyjs.com"> Gatsby</a>
+          <a href="http://www.jlarteaga.com"> Jorge Arteaga</a>
         </footer>
 )
